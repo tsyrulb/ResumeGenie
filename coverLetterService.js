@@ -3,8 +3,7 @@ const { GoogleGenerativeAI } = require("@google/generative-ai");
 require("dotenv").config();
 
 async function generateCoverLetter(pdfText, jobDescription) {
-  const prompt =
-    `
+  const prompt = `
     You are a professional cover letter writer. You will be given:
 
 1) The user’s CV text, containing background and skills.
