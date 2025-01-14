@@ -26,7 +26,7 @@
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/yourusername/ResumeGenie.git
+   git clone https://github.com/tsyrulb/ResumeGenie.git
    cd ResumeGenie
    ```
 
