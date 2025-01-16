@@ -39,7 +39,6 @@ const rawOutput = await resp.response.text();
 // If it has triple backticks, remove them:
 let processed = rawOutput.replace(/```/g, '').trim();
 const html = processed.replace(/^html\s*(\r?\n)?/i, '');
-console.log(html)
 return html;
 }
 
