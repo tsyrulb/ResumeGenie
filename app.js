@@ -7,7 +7,6 @@ const upload = multer({ dest: 'uploads/' });
 
 // 2) Import your controllers:
 const { generateGeminiPDF } = require('./src/controllers/geminiPdfController'); 
-const { generateCoverLetterEndpoint } = require('./src/controllers/coverLetterController');
 
 // 3) Import the router from api.js
 const apiRoutes = require('./src/routes/api');
@@ -23,7 +22,6 @@ app.use('/api/cv', apiRoutes);
 
 // 6) Additional routes directly in app.js
 app.post('/api/cv/generate-advanced', generateGeminiPDF);
-app.post('/api/cv/generate-cover', upload.single('file'), generateCoverLetterEndpoint);
 
 // 7) Start listening on your desired port
 const PORT = 5000;

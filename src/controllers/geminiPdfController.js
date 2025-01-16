@@ -26,7 +26,6 @@ exports.generateGeminiPDF = async (req, res) => {
     });
     const page = await browser.newPage();
 
-    // Optional: set timeouts to 0 for slower environments
     page.setDefaultNavigationTimeout(0);
 
     await page.setContent(html, {
@@ -48,7 +47,7 @@ exports.generateGeminiPDF = async (req, res) => {
     // 3) Return PDF
     res.download(outputPath, 'AI_CV.pdf', err => {
       if (err) console.error('Error sending PDF:', err);
-      // fs.unlinkSync(outputPath); // remove if needed
+      // fs.unlinkSync(outputPath); 
     });
   } catch (err) {
     console.error('Error generating Gemini PDF:', err);

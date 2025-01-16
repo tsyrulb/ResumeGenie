@@ -1,12 +1,12 @@
 
 # ResumeGenie
 
-**ResumeGenie** is a Node.js and Express backend server that leverages Google's Gemini AI to automate the creation and customization of professional CVs and cover letters. It processes uploaded CVs and job descriptions to generate tailored documents in PDF format, streamlining the job application process.
+**ResumeGenie** is a Node.js and Express backend server that leverages Google's Gemini AI to automate the creation and customization of professional CVs. It processes uploaded CVs and job descriptions to generate tailored documents in PDF format, streamlining the job application process.
 
 ## Features
 
 - **PDF Parsing**: Extract text from uploaded CV PDFs using `pdf-parse`.
-- **AI-Powered Generation**: Create customized CVs and cover letters with Google's Gemini AI.
+- **AI-Powered Generation**: Create customized CVs with Google's Gemini AI.
 - **HTML to PDF Conversion**: Convert generated HTML content into downloadable PDFs using Puppeteer.
 - **File Handling**: Manage file uploads securely with Multer.
 - **API Endpoints**: Provide RESTful APIs for frontend integration.
@@ -79,18 +79,6 @@
        ```
 
      - **Response**: Downloads `AI_CV.pdf`.
-
-   - **Generate Cover Letter**
-
-     - **Endpoint**: `/api/cv/generate-cover`
-     - **Method**: `POST`
-     - **Description**: Creates a tailored cover letter PDF based on an uploaded CV and job description.
-     - **Request**:
-       - **Content-Type**: `multipart/form-data`
-       - **Form Data**:
-         - `file`: PDF file of the existing CV.
-         - `jobDescription`: Text describing the job role.
-     - **Response**: Downloads `CoverLetter.pdf`.
 
    - **Generate Updated CV**
 

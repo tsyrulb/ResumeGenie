@@ -37,8 +37,6 @@ exports.generateUpdatedCV = async (req, res) => {
         }
 
         const updatedCV = stdout.trim();
-        console.log('Updated CV:', updatedCV);
-
         // 3. Return updated CV as JSON
         res.status(200).json({ updatedCV });
       }
