@@ -11,6 +11,8 @@
 - **File Handling**: Manage file uploads securely with Multer.
 - **API Endpoints**: Provide RESTful APIs for frontend integration.
 
+![Description of GIF](ResumeGenie.gif)
+
 ## Technologies Used
 
 - **Node.js**
