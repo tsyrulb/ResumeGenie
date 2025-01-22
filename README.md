@@ -1,3 +1,4 @@
+[![ResumeGenie](https://img.shields.io/badge/ResumeGenie-Client%20API-yellow?style=for-the-badge)](https://github.com/tsyrulb/resume-genie-client)
 
 # ResumeGenie
 
